@@ -1,12 +1,10 @@
 /**
  * main.js
- * http://www.codrops.com
+ 
  *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
+ 
  * 
- * Copyright 2016, Codrops
- * http://www.codrops.com
+ 
  */
 ;(function(window) {
 
@@ -14,7 +12,6 @@
 
 	// some helper functions
 	/**
-	 * from https://davidwalsh.name/javascript-debounce-function
 	 */
 	function debounce(func, wait, immediate) {
 		var timeout;
@@ -31,7 +28,6 @@
 		};
 	};
 	/**
-	 * from http://stackoverflow.com/a/6700
 	 */
 	Object.size = function(obj) {
 		var size = 0, key;
@@ -48,7 +44,6 @@
 		soundCtrl = mainContainer.querySelector('button.button--sound'),
 		isAudioOn = true,
 
-		// from http://stackoverflow.com/q/31184533 - original work: http://www.kaiserapps.com/lab/#ub
 		bubbles = {
 			canvas : null,
 			ctx : null,
