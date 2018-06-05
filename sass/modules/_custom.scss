@@ -1,10 +1,13 @@
 
 .template_portfolio{
-	background: #000;
+	background: #f5f2f0;
 }
 .grid {
   width: 100%;
   overflow: hidden;
+  max-width: 90%;
+  display: block;
+  margin: auto;
 }
 /* clearfix */
 
@@ -14,10 +17,11 @@
   clear: both;
 }
 .grid-item {
-    width: 24.4%;
+    width: 23%;
     padding:0;
-    margin: 0.3% 0.3% 0%;
+    margin: 1%;
     position: relative;
+    box-shadow: 0px 0px 15px #cacaca;
  
 
 
@@ -31,7 +35,7 @@
 	float: left;
 	overflow: hidden;
 	width: 100%;
-	background: #000;
+	background: #ddd;
 	text-align: center;
 	cursor: pointer;
 
@@ -218,7 +222,13 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	transition-delay: 0.2s;
 }
 
-
+.cm-fa{
+    float: right;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-right: 11px;
+}
 
 
 

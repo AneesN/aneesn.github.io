@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scroll to top</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/prism.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  
+
+
+</head>
+<body>
+
+  <!-- navigation -->
+    <div class="circleMenu">
+        <nav>
+          <ul class="outer">
+            <li><span class="mainBtn"></span>
+              <ul class="inner">
+                <li>
+                  <a href="../index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="../experiment.html">
+                    <i class="fa fa-code " aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="../portfolio.html">
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="../resume.pdf" class="featured-list__link" target="_blank">
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+  <!-- navigation end -->
+
+
+
+
+  <div class="container_wrapper">
+    <h1>SCROLL TO TOP</h1>
+    <a class="back" href="../experiment.html" title="Back"><i class="far fa-arrow-alt-circle-left"></i></a>
+
+     <div class="wrapper scroll-to-top">
+        <a href="#bottom" id="top">Click to scroll down</a>
+
+        <div id="bottom" class="star"></div>
+
+        <a href="#top1" >Click to scroll up</a>
+        <div id="top1" class="star1"></div>
+
+     </div>
+   
+      
+    <div class="how_use_widget">
+        <h2>How to use it:</h2>
+  <h3>Add Html</h3>
+  <pre><code class="language-css">
+    &lt;!DOCTYPE html&gt;<br>
+    &lt;html&gt;<br>
+    &lt;body&gt;<br>
+    <br>
+     &lt;div class="wrapper scroll-to-top"&gt;
+        &lt;a href="#bottom" id="top"&gt;Click to scroll down&lt;/a&gt;
+        &lt;div id="bottom" class="star"&gt;&lt;/div&gt;
+        &lt;a href="#top1" &gt;Click to scroll up&lt;/a&gt;
+        &lt;div id="top1" class="star1"&gt;&lt;/div&gt;
+     &lt;/div&gt;
+    <br>
+    &lt;/body&gt;<br>
+    &lt;/html&gt;
+
+  </code></pre>
+<h3>Add Css</h3>
+<pre>
+  <code class="language-css">
+    
+     .wrapper{
+        width: 100%;
+        height: 400px;
+        display: inline-block;
+        background: #f5f2f0;
+        position: relative;
+        overflow-y: scroll;
+      }
+
+      .scroll-to-top a {
+        background: #ddd;
+        color: #444;
+        font-family: sans-serif;
+        text-align: center;
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+      }
+
+      .scroll-to-top #star {
+        text-align: center;
+        font-size: 100px;
+        line-height: 300px;
+        color: #ddd;
+      }
+      .scroll-to-top .star{
+        height:400px;
+        width:100%;
+        background:#444;
+      }
+      .scroll-to-top .star1{
+        height:400px;
+        width:100%;
+        background:#000;
+      }
+
+
+      
+
+  </code>
+</pre>
+       
+<h3>Add Jquery & Script</h3>
+<pre>
+  <code  class="language-css">
+    &lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+      $('a[href^="#"]').on('click', function(event) {
+
+        var target = $(this.getAttribute('href'));
+
+        if( target.length ) {
+            event.preventDefault();
+            $('div').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+
+    });
+
+    &lt;/script&gt;
+  </code>
+</pre>    
+
+
+    </div>
+
+
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/prism.js"></script>
+  <script type="text/javascript">
+    $('a[href^="#"]').on('click', function(event) {
+
+        var target = $(this.getAttribute('href'));
+
+        if( target.length ) {
+            event.preventDefault();
+            $('div').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+
+    });
+
+  </script>
+
+</body>
+</html>

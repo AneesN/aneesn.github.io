@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Form click input</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/prism.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  
+
+
+</head>
+<body>
+
+  <!-- navigation -->
+    <div class="circleMenu">
+        <nav>
+          <ul class="outer">
+            <li><span class="mainBtn"></span>
+              <ul class="inner">
+                <li>
+                  <a href="../index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="../experiment.html">
+                    <i class="fa fa-code " aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="../portfolio.html">
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="../resume.pdf" class="featured-list__link" target="_blank">
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+  <!-- navigation end -->
+
+
+
+
+  <div class="container_wrapper">
+    <h1>FORM INPUT STYLE</h1>
+    <a class="back" href="../experiment.html" title="Back"><i class="far fa-arrow-alt-circle-left"></i></a>
+
+     <div class="wrapper">
+       <form name="contactForm" method=""   class="contact-form">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 md-input">
+                        <label>Name*</label>
+              <input type="text" class="form-control " name="fname" id="fname" placeholder="" required=""/>
+            </div>
+            <div class="col-md-6 col-sm-6 md-input">
+                        <label>Email*</label>
+              <input type="email" class="form-control " name="email"  id="email" placeholder="" required=""/>
+            </div>
+            <div class="col-md-12 md-input text-area">
+                        <label>Message</label>
+             
+                        <textarea name="message" id="message" class="form-control textBox" ></textarea>
+            </div>
+            <input type="hidden" name="action" value="contactform">
+            <div class="col-md-12">
+              <button class="btn-primary "  name="submit" value="submit" type="submit">Send message </button>
+            </div>
+          
+          </div>
+      </form>
+
+     </div>
+   
+      
+    <div class="how_use_widget">
+        <h2>How to use it:</h2>
+  <h3>Add Html</h3>
+  <pre><code class="language-css">
+    &lt;!DOCTYPE html&gt;<br>
+    &lt;html&gt;<br>
+    &lt;body&gt;<br>
+    <br>
+     &lt;div class="wrapper"&gt;
+        &lt;form name="contactForm" method=""   class="contact-form"&gt;
+            &lt;div class="row"&gt;
+              &lt;div class="col-md-6 col-sm-6 md-input"&gt;
+                &lt;label>Name*&lt;/label&gt;
+                &lt;input type="text" class="form-control " name="fname" id="fname" placeholder="" required=""/&gt;
+              &lt;/div&gt;
+              &lt;div class="col-md-6 col-sm-6 md-input"&gt;
+                &lt;label&gt;Email*&lt;/label&gt;
+                &lt;input type="email" class="form-control " name="email"  id="email" placeholder="" required=""/&gt;
+              &lt;/div&gt;
+              &lt;div class="col-md-12 md-input text-area"&gt;
+                &lt;label&gt;Message&lt;/label&gt;
+                &lt;textarea name="message" id="message" class="form-control textBox" &gt;&lt;/textarea&gt;
+              &lt;/div&gt;
+              &lt;input type="hidden" name="action" value="contactform"&gt;
+              &lt;div class="col-md-12"&gt;
+                &lt;button class="btn-primary "  name="submit" value="submit" type="submit"&gt;Send message &lt;/button&gt;
+              &lt;/div&gt;
+            
+            &lt;/div&gt;
+        &lt;/form&gt;
+     &lt;/div&gt;
+    <br>
+    &lt;/body&gt;<br>
+    &lt;/html&gt;
+
+  </code></pre>
+<h3>Add Css</h3>
+<pre>
+  <code class="language-css">
+    
+     .wrapper{
+        width: 100%;
+        height: 400px;
+        display: inline-block;
+        background: #f5f2f0;
+        position: relative;
+        overflow-y: scroll;
+      }
+
+      .contact-form{
+        width:80%;
+        height:auto;
+        display:table;
+        margin:50px auto 0;
+        
+      }
+      .col-md-6 {
+        width: 100%;
+      }
+      .md-input {
+        position: relative;
+      }
+      label {
+        color: #c3c3c3;
+        width: 100%;
+        float: left;
+        text-align: left;
+        display: inline-block;
+        font-size: 16px;
+        max-width: 100%;
+        position: absolute;
+        pointer-events: none;
+        padding-left: 15px;
+        top: 25px;
+      }
+      .form-control {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #9e0212;
+        color: #c4c4c4;
+        font-size: 16px;
+        text-indent: 15px;
+        outline: none;
+        height: 60px;
+        margin-bottom:10px;
+      }
+      .md-input.active label {
+        top: -2px;
+        font-size: 16px;
+        padding-left: 15px;
+        color: #e80038;
+        -moz-transition: .15s ease all;
+        -o-transition: .15s ease all;
+        -webkit-transition: .15s ease all;
+        transition: .15s ease all;
+      }
+      .textBox{margin-top:25px;}
+      .btn-primary{
+        width:250px;
+        height:50px;
+        background:red;
+        text-transform:uppercase;
+        color:#fff;
+        border:0px;
+        margin:20px auto;
+        display:table;
+      }
+      .btn-primary:hover{
+        opacity:0.7;
+      }
+
+  </code>
+</pre>
+
+<h3>Add Jquery & Script</h3>
+<pre>
+  <code  class="language-css">
+
+      &lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+
+      &lt;script&gt;
+
+        jQuery(document).ready(function() {
+
+            if (jQuery('.md-input>input, .md-input>textarea').length > 0) {
+                jQuery('.md-input>input, .md-input>textarea').each(function() {
+                    if (jQuery(this).val()) {
+                        jQuery(this).parent().addClass('active');
+                    }
+                });
+
+                jQuery('.md-input>input, .md-input>textarea').focusin(function() {
+                    jQuery(this).parent().addClass('active');
+
+                });
+                jQuery('.md-input>input, .md-input>textarea').focusout(function() {
+
+                     if($(this).val()==""){ 
+                         jQuery(this).parent().removeClass('active');
+                     } 
+
+                });
+            }
+
+        });
+
+
+      &lt;/script&gt;
+    
+  </code>
+</pre>
+       
+
+
+
+    </div>
+
+
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/prism.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+
+        if (jQuery('.md-input>input, .md-input>textarea').length > 0) {
+            jQuery('.md-input>input, .md-input>textarea').each(function() {
+                if (jQuery(this).val()) {
+                    jQuery(this).parent().addClass('active');
+                }
+            });
+
+            jQuery('.md-input>input, .md-input>textarea').focusin(function() {
+                jQuery(this).parent().addClass('active');
+
+            });
+            jQuery('.md-input>input, .md-input>textarea').focusout(function() {
+
+                 if($(this).val()==""){ 
+                     jQuery(this).parent().removeClass('active');
+                 } 
+
+
+                
+
+            });
+        }
+
+    });
+
+
+  </script>
+
+</body>
+</html>
