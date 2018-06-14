@@ -615,20 +615,32 @@ h1 {
 
 /* Media queries */
 
+@media screen and (max-width: 1100px) {
+	.landing-header__tagline{
+		max-width: 90%;
+
+	}
+	.landing-header__tagline h3{
+		padding-left: 3%;
+	}
+
+
+}
 @media screen and (max-width: 740px) {
 	h1 {
 	    font-size: 32px;
 	}
 	.landing-header__tagline h3 {
 	    font-size: 20px;
+	    padding-left: 12%;
 	}
 	.landing-header__tagline p{
 		font-size: 14px;
 	}
-	.landing-header__tagline{
+	/*.landing-header__tagline{
 		max-width: 67%;
 		width: 100%;
-	}
+	}*/
 
 }
 @media screen and (max-width: 43.75em) {
