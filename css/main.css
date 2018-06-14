@@ -3471,8 +3471,8 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     width: 31.3%;
     float: left; }
   .circleMenu {
-    bottom: 10px;
-    right: 10px; } }
+    bottom: 15px;
+    right: 20px; } }
 
 @media only screen and (max-width: 600px) {
   .grid-item {

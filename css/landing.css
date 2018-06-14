@@ -615,6 +615,22 @@ h1 {
 
 /* Media queries */
 
+@media screen and (max-width: 740px) {
+	h1 {
+	    font-size: 32px;
+	}
+	.landing-header__tagline h3 {
+	    font-size: 20px;
+	}
+	.landing-header__tagline p{
+		font-size: 14px;
+	}
+	.landing-header__tagline{
+		max-width: 67%;
+		width: 100%;
+	}
+
+}
 @media screen and (max-width: 43.75em) {
 	.codrops-demos {
 		margin: 0 0 0 0.5em;
@@ -672,6 +688,43 @@ h1 {
 
 
 
+@media screen and (max-width: 420px) {
+	h1 {
+	    font-size: 32px;
+	}
+	.landing-header__tagline h3 {
+	    font-size: 20px;
+        padding-left: 8%;
+	}
+	.landing-header__tagline p{
+		font-size: 12px;
+	}
+	.landing-header__tagline{
+		max-width: 100%;
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 380px) {
+	h1 {
+	    font-size: 28px;
+	}
+	.landing-header__tagline h3 {
+	    font-size: 18px;
+        padding-left: 6%;
+	}
+	
+
+}
+@media screen and (max-width: 330px) {
+	
+	.landing-header__tagline h3 {
+	    font-size: 16px;
+        padding-left: 0%;
+	}
+	
+
+}
 
 
 
