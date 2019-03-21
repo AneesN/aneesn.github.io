@@ -3477,5 +3477,8 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 @media only screen and (max-width: 600px) {
   .grid-item {
     width: 48%; } }
+@media only screen and (max-width: 420px) {
+  .grid-item {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
