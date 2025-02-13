@@ -172,14 +172,15 @@ h1 {
 	color: #fff;
 }
 .landing-header__tagline h3{
-	font-size: 1.8em;
-	padding: 0 0.5em;
-	font-weight: 600;
-	line-height: 1.75;
-	margin: 0 auto 0.2em;
-	color: #fff;
-	text-align: left;
-	padding-left: 11%;
+    font-size: 1.8em;
+    padding: 0 0em;
+    font-weight: 600;
+    line-height: 1.75;
+    margin: 0 auto 0.2em;
+    color: #fff;
+    text-align: left;
+    padding-left: 0;
+    width: 500px;
 }
 .landing-header__tagline p{
 	margin: 0px;
