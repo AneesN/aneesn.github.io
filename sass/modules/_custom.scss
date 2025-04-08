@@ -1,8 +1,14 @@
-
-.template_portfolio{
-	background: #f5f2f0;
+.template_portfolio {
+  background: #f5f2f0;
 }
 .grid {
+  width: 100%;
+  overflow: hidden;
+  max-width: 90%;
+  display: block;
+  margin: auto;
+}
+.grid-container {
   width: 100%;
   overflow: hidden;
   max-width: 90%;
@@ -12,353 +18,329 @@
 /* clearfix */
 
 .grid:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
 .grid-item {
-    width: 23%;
-    padding:0;
-    margin: 1%;
-    position: relative;
-    float: left;
-    box-shadow: 0px 0px 15px #cacaca;
- 
-
-
-	}
+  width: 23%;
+  padding: 0;
+  margin: 1%;
+  position: relative;
+  float: left;
+  box-shadow: 0px 0px 15px #cacaca;
+}
 
 /* Common style */
 .grid-item {
-	/* Common style */
- figure {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	width: 100%;
-	background: #ddd;
-	text-align: center;
-	cursor: pointer;
+  /* Common style */
+  figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    background: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
 
-}
+  figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 1;
+    width: 100%;
+  }
 
- figure img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-	max-width: 100%;
-	opacity: 1;
-	width: 100%;
-}
+  figure figcaption {
+    padding: 1em;
+    color: #fff;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin: 0px;
+    h4 {
+      margin: 0px;
+      font-weight: 400;
+      font-size: 1em;
+      color: #fff;
+      float: left;
+    }
+  }
 
- figure figcaption {
-	padding: 1em;
-	color: #fff;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	margin: 0px;
-	h4{
-		margin: 0px;
-		font-weight: 400;
-		font-size: 1em;
-		color: #fff;
-		float: left;
-	}
-}
+  figure figcaption::before,
+  figure figcaption::after {
+    pointer-events: none;
+  }
 
- figure figcaption::before,
- figure figcaption::after {
-	pointer-events: none;
-}
+  figure figcaption,
+  figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
- figure figcaption,
- figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
+  /* Anchor will cover the whole item by default */
+  /* For some effects it will show as a button */
+  figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+  }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-figure figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-}
+  figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+  }
 
- figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
-}
+  figure h2 span {
+    font-weight: 800;
+  }
 
- figure h2 span {
-	font-weight: 800;
-}
+  figure h2,
+  figure p {
+    margin: 0;
+  }
 
-figure h2,
- figure p {
-	margin: 0;
-}
-
-figure p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
-}
-
+  figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+  }
 }
 
 .fa-wordpress:before {
-    content: "\f19a";
+  content: "\f19a";
 }
-
-
 
 /*---------------*/
 /***** Zoe *****/
 /*---------------*/
 
 figure.effect-zoe figcaption {
-	top: auto;
-	bottom: 0;
-	padding: 22px 20px;
-	height: 3.75em;
-	background: #132a62;
-	color: #3c4a50;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
-	.fa{
-		margin-top: 6px;
-	}
-
+  top: auto;
+  bottom: 0;
+  padding: 22px 20px;
+  height: 3.75em;
+  background: #132a62;
+  color: #3c4a50;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  .fa {
+    margin-top: 6px;
+  }
 }
 
-
 figure.effect-zoe p.icon-links a {
-	float: right;
-	color: #3c4a50;
-	font-size: 1.4em;
+  float: right;
+  color: #3c4a50;
+  font-size: 1.4em;
 }
 
 figure.effect-zoe:hover p.icon-links a:hover,
 figure.effect-zoe:hover p.icon-links a:focus {
-	color:#4963be;
+  color: #4963be;
 }
 
 figure.effect-zoe .description {
-	position: absolute;
-	bottom: 3em;
-	padding: 0 15px;
-	color: #fff;
-	text-transform: none;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-	-webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
-	left: 0px;
-	width: 100%;
-	font-size: 2em;
-	line-height: 46px;
-	font-weight: 400;
-
+  position: absolute;
+  bottom: 3em;
+  padding: 0 15px;
+  color: #fff;
+  text-transform: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  -webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+  left: 0px;
+  width: 100%;
+  font-size: 2em;
+  line-height: 46px;
+  font-weight: 400;
 }
 
 figure.effect-zoe h4,
 figure.effect-zoe p.icon-links a {
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,200%,0);
-	transform: translate3d(0,200%,0);
-	color: #fff;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 200%, 0);
+  transform: translate3d(0, 200%, 0);
+  color: #fff;
 }
 
 figure.effect-zoe p.icon-links a span::before {
-	display: inline-block;
-	padding: 8px 10px;
-	font-family: 'feathericons';
-	speak: none;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  padding: 8px 10px;
+  font-family: "feathericons";
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-
 figure.effect-zoe h4 {
-	display: inline-block;
+  display: inline-block;
 }
 
 figure.effect-zoe:hover .description {
-	opacity: 1;
+  opacity: 1;
 }
 
 figure.effect-zoe:hover figcaption,
 figure.effect-zoe:hover h4,
 figure.effect-zoe:hover p.icon-links a {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 figure.effect-zoe:hover h4 {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
 }
 
 figure.effect-zoe:hover p.icon-links a:nth-child(3) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 figure.effect-zoe:hover p.icon-links a:nth-child(2) {
-	-webkit-transition-delay: 0.15s;
-	transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
 }
 
 figure.effect-zoe:hover p.icon-links a:first-child {
-	-webkit-transition-delay: 0.2s;
-	transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
-.cm-fa{
-    float: right;
-    color: #fff;
-    font-size: 18px;
-    margin-top: 5px;
-    margin-right: 11px;
+.cm-fa {
+  float: right;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-right: 11px;
 }
 
+/* SCSS Vars */
+$primaryC: #637bef;
+$primaryCd: #4a63bd;
+$primaryL: #ff5a94;
+$standard: #ffffff;
 
-
-
-
-
-
-	/* SCSS Vars */
-	$primaryC:	#637bef;
-	$primaryCd:	#4a63bd;
-	$primaryL:	#ff5a94;
-	$standard:	#ffffff;
-
-	$smallWidth: 48px;
+$smallWidth: 48px;
 
 /* The Circle menu */
-.circleMenu{
-	position:fixed;
-	right:50px;
-	bottom:50px;
+.circleMenu {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
   z-index: 10;
-	transform:translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.mainBtn{
-	display:block;
-	width:48px;
-	height:48px;
-	position:relative;
-	z-index:20;
-	background-color:$standard;
-	transition:transform .3s ease;
-	border-radius: 100%;
+.mainBtn {
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  z-index: 20;
+  background-color: $standard;
+  transition: transform 0.3s ease;
+  border-radius: 100%;
 
-	&:before,
-	&:after{
-		content:'';
-		display:block;
-		width:2px;
-		height:30px;
-		background-color:$primaryL;
-		position:absolute;
-		left:23px;
-		top:9px; }
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 30px;
+    background-color: $primaryL;
+    position: absolute;
+    left: 23px;
+    top: 9px;
+  }
 
-	&:after{
-		width:30px;
-		height:2px;
-		left:9px;
-		top:23px;	}
+  &:after {
+    width: 30px;
+    height: 2px;
+    left: 9px;
+    top: 23px;
+  }
 }
 
-.circleMenu:hover .mainBtn{
-	cursor:pointer;
-	transform:rotate(45deg);
+.circleMenu:hover .mainBtn {
+  cursor: pointer;
+  transform: rotate(45deg);
 }
 
-.circleMenu .inner{
-	display:block;
-	width:58px;
-	height:58px;
-	background-color:$primaryCd;
-	padding:6px;
-	transition:width .3s ease, height .3s ease;
-	border-radius: 100%;
-	// @extend .circleMenu;
+.circleMenu .inner {
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-color: $primaryCd;
+  padding: 6px;
+  transition: width 0.3s ease, height 0.3s ease;
+  border-radius: 100%;
+  // @extend .circleMenu;
   margin: 0px;
-	left:50%;
-	top:50%;
+  left: 50%;
+  top: 50%;
   position: absolute;
-	transform:translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.circleMenu:hover .inner{
-	width:150px;
-	height:150px;
+.circleMenu:hover .inner {
+  width: 150px;
+  height: 150px;
 }
 
-.circleMenu .inner > li{
-	// @extend .circleMenu;
-	left:50%;
-	top:50%;
-	position: absolute;
-	transform:translate(-50%, -50%);
-	z-index:10;
-	transition:left .3s ease, top .3s ease;
+.circleMenu .inner > li {
+  // @extend .circleMenu;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: left 0.3s ease, top 0.3s ease;
   margin: 0px;
 }
 
-.circleMenu:hover .inner > li:nth-child(1){ left:20%; }
-.circleMenu:hover .inner > li:nth-child(2){ top:20%; }
-.circleMenu:hover .inner > li:nth-child(3){ left:80%; }
-.circleMenu:hover .inner > li:nth-child(4){ top:80%; }
+.circleMenu:hover .inner > li:nth-child(1) {
+  left: 20%;
+}
+.circleMenu:hover .inner > li:nth-child(2) {
+  top: 20%;
+}
+.circleMenu:hover .inner > li:nth-child(3) {
+  left: 80%;
+}
+.circleMenu:hover .inner > li:nth-child(4) {
+  top: 80%;
+}
 
-.circleMenu .fa{ color:$standard; }
-
-
+.circleMenu .fa {
+  color: $standard;
+}
 
 //======================================
 //experiment
 //========================================
 
-.container_wrapper{
-	max-width: 1100px;
-	display: table;
-	margin: auto;
-	width: 100%;
-	height: 800px;
-	background: #eee;
-.swiper-outer{
-	width: 100%;
-	height: 500px;
-	position: relative;
+.container_wrapper {
+  max-width: 1100px;
+  display: table;
+  margin: auto;
+  width: 100%;
+  height: 800px;
+  background: #eee;
+  .swiper-outer {
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
 }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
