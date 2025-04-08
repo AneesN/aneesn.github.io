@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+		integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+
+<body class="template_portfolio">
+
+	<div class="circleMenu">
+		<nav>
+			<ul class="outer">
+				<li><span class="mainBtn"></span>
+					<ul class="inner">
+						<li>
+							<a href="index.html">
+								<i class="fa fa-home" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="experiment.html">
+								<i class="fa fa-code " aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="portfolio.html">
+								<i class="fa fa-laptop" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="resume.pdf" class="featured-list__link" target="_blank">
+								<i class="fa fa-file-text" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="grid-container px-3 pt-5">
+		<h3>Certificate</h3>
+	</div>
+
+	<div class="grid">
+		<div class="grid-item ">
+			<figure class="effect-zoe">
+				<img data-src="img/data-analyst/power-bi.jpg" src="img/data-analyst/power-bi.jpg" alt="abp-1">
+				<figcaption>
+					<h4>POWER BI</h4>
+					<p class="icon-links">
+						<a href="POWER-BI.pdf" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+						<!-- <i class="cm-fa fab fa-wordpress"></i> -->
+					</p>
+					<!-- <h2 class="description">Project Name</h2> -->
+				</figcaption>
+			</figure>
+		</div>
+
+	</div>
+	<div class="grid-container px-3 pt-5">
+		<h3>Projects</h3>
+	</div>
+
+	<div class="grid">
+		<div class="grid-item ">
+			<figure class="effect-zoe">
+				<img data-src="img/data-analyst/sales-report-dashboard.jpg"
+					src="img/data-analyst/sales-report-dashboard.jpg" alt="abp-1">
+				<figcaption>
+					<h4>PIZZA SALES REPORT</h4>
+					<p class="icon-links">
+						<a href="img/data-analyst/pizza-sales-report.pdf" target="_blank"><i class="fa fa-link"
+								aria-hidden="true"></i></a>
+						<!-- <i class="cm-fa fab fa-wordpress"></i> -->
+					</p>
+					<!-- <h2 class="description">Project Name</h2> -->
+				</figcaption>
+			</figure>
+		</div>
+		<div class="grid-item ">
+			<figure class="effect-zoe">
+				<img data-src="img/data-analyst/perfomance-dashboard.jpg"
+					src="img/data-analyst/perfomance-dashboard.jpg" alt="abp-1">
+				<figcaption>
+					<h4>PERFORMANCE DASHBOARD</h4>
+					<p class="icon-links">
+						<a href="img/data-analyst/performance-dashboard.pdf" target="_blank"><i class="fa fa-link"
+								aria-hidden="true"></i></a>
+						<!-- <i class="cm-fa fab fa-wordpress"></i> -->
+					</p>
+					<!-- <h2 class="description">Project Name</h2> -->
+				</figcaption>
+			</figure>
+		</div>
+		<div class="grid-item ">
+			<figure class="effect-zoe">
+				<img data-src="img/data-analyst/sales-dashboard.jpg" src="img/data-analyst/sales-dashboard.jpg"
+					alt="abp-1">
+				<figcaption>
+					<h4>SALES ANALYSIS DASHBOARD</h4>
+					<p class="icon-links">
+						<a href="img/data-analyst/Sales-Analysis-dashboard.pdf" target="_blank"><i class="fa fa-link"
+								aria-hidden="true"></i></a>
+						<!-- <i class="cm-fa fab fa-wordpress"></i> -->
+					</p>
+					<!-- <h2 class="description">Project Name</h2> -->
+				</figcaption>
+			</figure>
+		</div>
+		<div class="grid-item ">
+			<figure class="effect-zoe">
+				<img data-src="img/data-analyst/flight-dashboard.jpg" src="img/data-analyst/flight-dashboard.jpg"
+					alt="abp-1">
+				<figcaption>
+					<h4>FLIGHT MONTHLY ANALYSIS </h4>
+					<p class="icon-links">
+						<a href="img/data-analyst/Travel-Dashboard.pdf" target="_blank"><i class="fa fa-link"
+								aria-hidden="true"></i></a>
+						<!-- <i class="cm-fa fab fa-wordpress"></i> -->
+					</p>
+					<!-- <h2 class="description">Project Name</h2> -->
+				</figcaption>
+			</figure>
+		</div>
+
+
+	</div>
+
+
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/masonry.js"></script>
+	<script src="js/jquery.imglazy.js"></script>
+
+	<script>
+		jQuery(window).load(function () {
+			jQuery('.grid').masonry({
+				itemSelector: '.grid-item',
+				percentPosition: true
+			});
+
+		});
+		jQuery(function ($) {
+			$.imgLazy({ effect: 'fadeIn', viewport: true, threshold: 200 });
+		});
+	</script>
+
+
+</body>
+
+</html>
