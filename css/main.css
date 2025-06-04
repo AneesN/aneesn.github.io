@@ -4260,6 +4260,8 @@ h6 {
   font-size: 0.8em;
   color: #fff;
   float: left;
+  line-height: 2;
+  text-align: center;
 }
 .grid-item figure figcaption::before,
 .grid-item figure figcaption::after {
@@ -4345,10 +4347,11 @@ figure.effect-zoe .description {
 }
 
 figure.effect-zoe h4,
-figure.effect-zoe p.icon-links a {
+figure.effect-zoe p.icon-links {
   transition: transform 0.35s;
   transform: translate3d(0, 200%, 0);
   color: #fff;
+  display: inline;
 }
 
 figure.effect-zoe p.icon-links a span::before {
